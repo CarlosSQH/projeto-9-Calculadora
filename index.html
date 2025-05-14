@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+  </head>
+  <body>
+    <div id="corpo">
+      <input type="text" id="tela" disabled />
+
+      <div class="centraliza">
+        <button onclick="praTela('(')" class="botão cores">(</button>
+        <button onclick="praTela(')')" class="botão cores">)</button>
+        <button onclick="praTela('%')" class="botão cores">%</button>
+        <button onclick="limpatela('AC')" class="botão cores">AC</button>
+      </div>
+      <div class="centraliza">
+        <button onclick="praTela('7')" class="botão">7</button>
+        <button onclick="praTela('8')" class="botão">8</button>
+        <button onclick="praTela('9')" class="botão">9</button>
+        <button onclick="praTela('/')" class="botão cores">÷</button>
+      </div>
+      <div class="centraliza">
+        <button onclick="praTela('4')" class="botão">4</button>
+        <button onclick="praTela('5')" class="botão">5</button>
+        <button onclick="praTela('6')" class="botão">6</button>
+        <button onclick="praTela('*')" class="botão cores">X</button>
+      </div>
+      <div class="centraliza">
+        <button onclick="praTela('1')" class="botão">1</button>
+        <button onclick="praTela('2')" class="botão">2</button>
+        <button onclick="praTela('3')" class="botão">3</button>
+        <button onclick="praTela('-')" class="botão cores">-</button>
+      </div>
+      <div class="centraliza">
+        <button onclick="praTela('0')" class="botão">0</button>
+        <button onclick="praTela('.')" class="botão">.</button>
+        <button onclick="calculate('=')" class="botão">=</button>
+        <button onclick="praTela('+')" class="botão cores">+</button>
+      </div>
+    </div>
+
+    <script src="/js/calculadora.js"></script>
+  </body>
+</html>
